@@ -161,3 +161,18 @@ body {
 .winkelmand-knop:hover {
     background-color: #4fa3e1; /* Donkerder blauw bij hover */
 }
+
+#sociale-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+#sociale-media img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+#sociale-media img:hover {
+    transform: scale(1.2); /* Vergroot het logo bij hover */
+}
