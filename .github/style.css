@@ -1,0 +1,163 @@
+/* Algemene Stijlen voor de Pagina */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Sectie */
+#header {
+    background-color: #1a41dd;
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+#navigatie a {
+    color: rgb(66, 195, 242);
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+#zoekbalk input {
+    padding: 10px;
+}
+
+/* Banner Sectie */
+#banner-sectie {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 12px;
+}
+
+/* Categorieën Sectie */
+#categorieen {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.categorie a {
+    margin: 0 15px;
+    padding: 10px;
+    background-color: #ddd;
+    color: rgb(66, 195, 242);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Product Overzicht Sectie */
+#product-overzicht {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#product-overzicht h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.producten-rij {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px; /* Ruimte tussen de producten */
+}
+
+.product-kaart {
+    border: 1px solid #ddd;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.product-kaart img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Over Ons en Contact Sectie */
+#over-ons, #contact {
+    padding: 20px;
+    background-color: #f8f8f8;
+    margin: 20px;
+}
+
+/* Beleid Sectie */
+#beleid {
+    padding: 20px;
+    background-color: #f8f8f8; /* Zelfde als Over Ons en Contact */
+    margin: 20px;
+}
+
+#beleid h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #000000; /* Dezelfde kleur als de header */
+}
+
+#beleid h3 {
+    font-size: 22px;
+    margin-top: 20px;
+    color: #555;
+}
+
+#beleid p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+#beleid a {
+    color: #66c2ff; /* Hetzelfde lichtblauw als de winkelmand knop */
+    text-decoration: none;
+}
+
+#beleid a:hover {
+    color: #4fa3e1; /* Donkerder blauw bij hover */
+}
+
+/* Footer Sectie */
+#footer {
+    background-color: #1a41dd;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Winkelmand Knop */
+.winkelmand-knop {
+    padding: 15px 25px;
+    background-color: #66c2ff; /* Lichtblauw */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.winkelmand-knop:hover {
+    background-color: #4fa3e1; /* Donkerder blauw bij hover */
+}
