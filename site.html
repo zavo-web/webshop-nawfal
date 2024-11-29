@@ -231,20 +231,7 @@
         </section>
     </section>
     
-    <script>
-        const stars = document.querySelectorAll(".rating i");
-        stars.forEach(star => {
-            star.addEventListener("click", (e) => {
-                const value = e.target.getAttribute("data-value");
-                const parent = e.target.parentElement;
-                const allStars = parent.querySelectorAll("i");
-                allStars.forEach(s => s.classList.remove("active"));
-                for (let i = 0; i < value; i++) {
-                    allStars[i].classList.add("active");
-                }
-            });
-        });
-    </script>
+    
 
 </body>
 </html>
