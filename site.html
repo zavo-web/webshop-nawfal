@@ -1,237 +1,288 @@
 <!DOCTYPE html>
 <html lang="nl">
-<head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IT-SHOP</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <a href="#"
+        ><img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAEfHGrg5Zh41XhHHPkFbhWqZqaxKvs-FBTw&s"
+          alt="Logo"
+          id="logo"
+          href="logo"
+        />
+      </a>
+      <nav id="navigatie">
+        <a href="#home">Home</a>
+        <a href="#product-overzicht">Producten</a>
+        <a href="#over-ons">Over ons</a>
+        <a href="#contact">Contact</a>
+        <a href="#beleid">Beleid</a>
+      </nav>
+      <div id="zoekbalk">
+        <input type="text" placeholder="Zoek producten..." />
+      </div>
+      <div id="winkelmand-profiel">
+        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        <a href="#"><i class="fas fa-user"></i></a>
+      </div>
+    </header>
 
-    <!-- Header Sectie -->
-    <section id="header">
-        <section id="logo">
-            <a href="site.html"><img src="logo.png" alt="logo" width="150"></a>
-        </section>
-        <nav id="navigatie">
-            <a href="#home">Home</a>
-            <a href="#product-overzicht">Producten</a>
-            <a href="#over-ons">Over ons</a>
-            <a href="#contact">Contact</a>
-            <a href="#beleid">Beleid</a> <!-- Link naar Beleid sectie -->
-        </nav>
-        <section id="zoekbalk">
-            <input type="text" placeholder="Zoek producten...">
-        </section>
-        <section id="winkelmand-profiel">
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/107/107831.png" alt="Winkelmand" width="30"></a>
-            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png" alt="Profiel" width="30"></a>
-        </section>
+    <!-- Banner -->
+    <section id="banner">
+      <h1>Beste prijzen voor IT-Producten</h1>
+      <p>Speciale aanbiedingen voor iedereen in de IT-wereld!</p>
     </section>
 
-    <!-- Banner Sectie -->
-    <section id="banner-sectie">
-        <h2>Beste prijzen voor IT-Producten</h2>
-        <p>Speciale aanbieding voor geïnteresseerde mensen in de wereld van IT!</p>
-    </section>
-
-    <!-- Categorieën Sectie -->
+    <!-- Categorieën -->
     <section id="categorieen">
-        <section class="categorie">
-            <a href="#laptops">Laptops</a>
-        </section>
-        <section class="categorie">
-            <a href="#smartphones">Smartphones</a>
-        </section>
-        <section class="categorie">
-            <a href="#tablets">Tablets</a>
-        </section>
+      <a href="#laptops" class="categorie">Laptops</a>
+      <a href="#smartphones" class="categorie">Smartphones</a>
+      <a href="#tablets" class="categorie">Tablets</a>
     </section>
 
-    <!-- Product Overzicht Sectie -->
+    <!-- Product Overzicht -->
     <section id="product-overzicht">
-        <h2 id="laptops">Laptops</h2>
-        <section class="producten-rij">
-            <section class="product-kaart">
-                <img src="https://www.repairo.be/2165-large_default/pc-portable-lenovo.webp" alt="Laptop 1 Afbeelding">
-                <h3>Lenovo</h3>
-                <p>Prijs: €299,00</p>
-                <p>Krachtige laptop met snelle processor.</p>
-                <div class="rating">
-                    <i class="fas fa-star" data-value="1"></i>
-                    <i class="fas fa-star" data-value="2"></i>
-                    <i class="fas fa-star" data-value="3"></i>
-                    <i class="fas fa-star" data-value="4"></i>
-                    <i class="fas fa-star" data-value="5"></i>
-                </div>
-                <button class="winkelmand-knop">In winkelmand</button>
-            </section>
-            <section class="product-kaart">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeFpsJF8rkFCxCltNQl96YLDqbjGIBhwRk0Q&s" alt="Laptop 2 Afbeelding">
-                <h3>Macbook</h3>
-                <p>Prijs: €805,00</p>
-                <p>Compacte laptop met lange batterijduur.</p>
-                <div class="rating">
-                    <i class="fas fa-star" data-value="1"></i>
-                    <i class="fas fa-star" data-value="2"></i>
-                    <i class="fas fa-star" data-value="3"></i>
-                    <i class="fas fa-star" data-value="4"></i>
-                    <i class="fas fa-star" data-value="5"></i>
-                </div>
-                <button class="winkelmand-knop">In winkelmand</button>
-            </section>
-            <section class="product-kaart">
-                <img src="https://www.repairo.be/2146-large_default/pc-portable-lenovo.webp" alt="Laptop 3 Afbeelding">
-                <h3>Thinkpad</h3>
-                <p>Prijs: €699,00</p>
-                <p>Grote opslagcapaciteit en scherp beeldscherm.</p>
-                <div class="rating">
-                    <i class="fas fa-star" data-value="1"></i>
-                    <i class="fas fa-star" data-value="2"></i>
-                    <i class="fas fa-star" data-value="3"></i>
-                    <i class="fas fa-star" data-value="4"></i>
-                    <i class="fas fa-star" data-value="5"></i>
-                </div>
-                <button class="winkelmand-knop">In winkelmand</button>
-            </section>
+      <h2 id="laptops">Laptops</h2>
+      <section class="producten-rij">
+        <section class="product-kaart">
+          <img
+            src="https://www.repairo.be/2165-large_default/pc-portable-lenovo.webp"
+            alt="Laptop 1 Afbeelding"
+          />
+          <h3>Lenovo</h3>
+          <p>Prijs: €299,00</p>
+          <p>Krachtige laptop met snelle processor.</p>
+          <div>
+            <button class="winkelmand-knop">In winkelmand</button>
+            <div>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
         </section>
+        <section class="product-kaart">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeFpsJF8rkFCxCltNQl96YLDqbjGIBhwRk0Q&s"
+            alt="Laptop 2 Afbeelding"
+          />
+          <h3>Macbook</h3>
+          <p>Prijs: €805,00</p>
+          <p>Compacte laptop met lange batterijduur.</p>
+          <div>
+            <button class="winkelmand-knop">In winkelmand</button>
+            <div>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+        </section>
+        <section class="product-kaart">
+          <img
+            src="https://www.repairo.be/2146-large_default/pc-portable-lenovo.webp"
+            alt="Laptop 3 Afbeelding"
+          />
+          <h3>Thinkpad</h3>
+          <p>Prijs: €699,00</p>
+          <p>Grote opslagcapaciteit en scherp beeldscherm.</p>
+          <div>
+            <button class="winkelmand-knop">In winkelmand</button>
+            <div>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+        </section>
+      </section>
 
-        <h2 id="smartphones">Smartphones</h2>
-        <section class="producten-rij">
-            <section class="product-kaart">
-                <img src="samsueng.png" alt="samsung">
-                <h3>Samsung</h3>
-                <p>Prijs: €449,99</p>
-                <p>Smartphone met uitstekende camera.</p>
-                <div class="rating">
-                    <i class="fas fa-star" data-value="1"></i>
-                    <i class="fas fa-star" data-value="2"></i>
-                    <i class="fas fa-star" data-value="3"></i>
-                    <i class="fas fa-star" data-value="4"></i>
-                    <i class="fas fa-star" data-value="5"></i>
-                </div>
-                <button class="winkelmand-knop">In winkelmand</button>
-            </section>
-            <section class="product-kaart">
-                <img src="iphone.png" alt="iphone">
-                <h3>Iphone</h3>
-                <p>Prijs: €529,00</p>
-                <p>Budgetvriendelijke smartphone met goede prestaties.</p>
-                <div class="rating">
-                    <i class="fas fa-star" data-value="1"></i>
-                    <i class="fas fa-star" data-value="2"></i>
-                    <i class="fas fa-star" data-value="3"></i>
-                    <i class="fas fa-star" data-value="4"></i>
-                    <i class="fas fa-star" data-value="5"></i>
-                </div>
-                <button class="winkelmand-knop">In winkelmand</button>
-            </section>
-            <section class="product-kaart">
-                <img src="huawei.png" alt="huawei">
-                <h3>Huawei</h3>
-                <p>Prijs: €649,99</p>
-                <p>Premium model met hoge snelheid en grote batterij.</p>
-                <div class="rating">
-                    <i class="fas fa-star" data-value="1"></i>
-                    <i class="fas fa-star" data-value="2"></i>
-                    <i class="fas fa-star" data-value="3"></i>
-                    <i class="fas fa-star" data-value="4"></i>
-                    <i class="fas fa-star" data-value="5"></i>
-                </div>
-                <button class="winkelmand-knop">In winkelmand</button>
-            </section>
+      <h2 id="smartphones">Smartphones</h2>
+      <section class="producten-rij">
+        <section class="product-kaart">
+          <img src="samsueng.png" alt="Samsung" />
+          <h3>Samsung</h3>
+          <p>Prijs: €449,99</p>
+          <p>Smartphone met uitstekende camera.</p>
+          <div>
+            <button class="winkelmand-knop">In winkelmand</button>
+            <div>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
         </section>
+        <section class="product-kaart">
+          <img src="iphone.png" alt="iPhone" />
+          <h3>iPhone</h3>
+          <p>Prijs: €529,00</p>
+          <p>Budgetvriendelijke smartphone met goede prestaties.</p>
+          <div>
+            <button class="winkelmand-knop">In winkelmand</button>
+            <div>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+        </section>
+        <section class="product-kaart">
+          <img src="huawei.png" alt="Huawei" />
+          <h3>Huawei</h3>
+          <p>Prijs: €649,99</p>
+          <p>Premium model met hoge snelheid en grote batterij.</p>
+          <div>
+            <button class="winkelmand-knop">In winkelmand</button>
+            <div>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+          </div>
+        </section>
+      </section>
 
-        <h2 id="tablets">Tablets</h2>
-        <section class="producten-rij">
-            <section class="product-kaart">
-                <img src="samuengtablet.png" alt="Tablet 1 Afbeelding">
-                <h3>Samsung</h3>
-                <p>Prijs: €169,00</p>
-                <p>Tablet met hoge resolutie scherm.</p>
-                <div class="rating">
-                    <i class="fas fa-star" data-value="1"></i>
-                    <i class="fas fa-star" data-value="2"></i>
-                    <i class="fas fa-star" data-value="3"></i>
-                    <i class="fas fa-star" data-value="4"></i>
-                    <i class="fas fa-star" data-value="5"></i>
-                </div>
-                <button class="winkelmand-knop">In winkelmand</button>
-            </section>
-            <section class="product-kaart">
-                <img src="lenovo.png" alt="lenovo">
-                <h3>Lenovo</h3>
-                <p>Prijs: €299,00</p>
-                <p>Betaalbare tablet met lange batterijduur.</p>
-                <div class="rating">
-                    <i class="fas fa-star" data-value="1"></i>
-                    <i class="fas fa-star" data-value="2"></i>
-                    <i class="fas fa-star" data-value="3"></i>
-                    <i class="fas fa-star" data-value="4"></i>
-                    <i class="fas fa-star" data-value="5"></i>
-                </div>
-                <button class="winkelmand-knop">In winkelmand</button>
-            </section>
-            <section class="product-kaart">
-                <img src="ipad.png" alt="ipad">
-                <h3>Ipad</h3>
-                <p>Prijs: €399,00</p>
-                <p>Krachtige tablet geschikt voor multitasking en gaming.</p>
-                <div class="rating">
-                    <i class="fas fa-star" data-value="1"></i>
-                    <i class="fas fa-star" data-value="2"></i>
-                    <i class="fas fa-star" data-value="3"></i>
-                    <i class="fas fa-star" data-value="4"></i>
-                    <i class="fas fa-star" data-value="5"></i>
-                </div>
-                <button class="winkelmand-knop">In winkelmand</button>
-            </section>
+      <h2 id="tablets">Tablets</h2>
+      <section class="producten-rij">
+        <section class="product-kaart">
+          <img src="samuengtablet.png" alt="Tablet 1 Afbeelding" />
+          <h3>Samsung</h3>
+          <p>Prijs: €169,00</p>
+          <p>Tablet met hoge resolutie scherm. 120hz,1440P,2K,lange batterij</p>
+          <div>
+            <button class="winkelmand-knop">In winkelmand</button>
+            <div>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
         </section>
+        <section class="product-kaart">
+          <img src="lenovo.png" alt="Lenovo" />
+          <h3>Lenovo</h3>
+          <p>Prijs: €299,00</p>
+          <p>Betaalbare tablet met lange batterijduur.</p>
+          <div>
+            <button class="winkelmand-knop">In winkelmand</button>
+            <div>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+        </section>
+        <section class="product-kaart">
+          <img src="ipad.png" alt="iPad" />
+          <h3>iPad</h3>
+          <p>Prijs: €399,00</p>
+          <p>Krachtige tablet geschikt voor multitasking en gaming.</p>
+          <div>
+            <button class="winkelmand-knop">In winkelmand</button>
+            <div>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+          </div>
+        </section>
+      </section>
     </section>
 
-    <!-- Over Ons en Contact Sectie -->
+    <!-- Over Ons -->
     <section id="over-ons">
-        <h2>Over Ons</h2>
-        <p>Welkom bij onze IT-SHOP! Wij bieden een assortiment van IT-producten, laptops tot smartphones en tablets. Onze missie is om klanten de beste kwaliteit en service te bieden.</p>
+      <h2>Over Ons</h2>
+      <p>
+        Welkom bij onze IT-SHOP! Wij bieden een breed assortiment van
+        hoogwaardige IT-producten.
+      </p>
     </section>
 
+    <!-- Contact -->
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Neem contact met ons op via e-mail: contact@IT-SHOP.nl</p>
-        <p>Of bel ons op: 012-3456789</p>
+      <h2>Contact</h2>
+      <p>Email: contact@IT-SHOP.nl</p>
+      <p>Telefoon: 012-3456789</p>
     </section>
 
-    <!-- Beleid Sectie -->
     <section id="beleid">
-        <h2>Beleid</h2>
-        <h3>Retourbeleid</h3>
-        <p>We bieden een 30-dagen retourbeleid. Als u niet tevreden bent met uw aankoop, kunt u het product binnen 30 dagen retourneren voor een volledige terugbetaling.</p>
-        <h3>Privacybeleid</h3>
-        <p>Wij respecteren uw privacy en zorgen ervoor dat uw persoonlijke gegevens veilig worden behandeld. Lees ons volledige privacybeleid voor meer informatie.</p>
-        <h3>Verzending</h3>
-        <p>Wij bieden gratis verzending voor bestellingen boven de €50. Leveringen worden binnen 3-5 werkdagen geleverd.</p>
+      <h2>Beleid</h2>
+      <h3>Retourbeleid</h3>
+      <p>
+        We bieden een 30-dagen retourbeleid. Als u niet tevreden bent met uw
+        aankoop, kunt u het product binnen 30 dagen retourneren voor een
+        volledige terugbetaling.
+      </p>
+      <h3>Privacybeleid</h3>
+      <p>
+        Wij respecteren uw privacy en zorgen ervoor dat uw persoonlijke gegevens
+        veilig worden behandeld. Lees ons volledige privacybeleid voor meer
+        informatie.
+      </p>
+      <h3>Verzending</h3>
+      <p>
+        Wij bieden gratis verzending voor bestellingen boven de €50. Leveringen
+        worden binnen 3-5 werkdagen geleverd.
+      </p>
     </section>
 
-    <!-- Footer Sectie -->
-    <section id="footer">
-        <section id="footer-navigatie">
-            <a href="#over-ons">Over ons</a>
-            <a href="#contact">Contact</a>
-            <a href="#beleid">Beleid</a>
-        </section>
-        <section id="sociale-media">
-            <a href="https://www.facebook.com" target="_blank" title="Facebook">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" width="30">
-            </a>
-            <a href="https://www.twitter.com" target="_blank" title="Twitter">
-                <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" width="30">
-            </a>
-            <a href="https://www.instagram.com" target="_blank" title="Instagram">
-                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="30">
-            </a>
-        </section>
-    </section>
-    
-    
-
-</body>
+    <!-- Footer -->
+    <footer id="footer">
+      <p>&copy; 2024 Alle rechten voorbehouden</p>
+      <div id="social-media">
+        <a href="https://www.facebook.com" target="_blank" class="social-icon">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+            alt="Facebook Logo"
+          />
+        </a>
+        <a href="https://www.twitter.com/" target="_blank" title="Twitter">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
+            alt="Twitter"
+            width="30"
+          />
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="social-icon">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+            alt="Instagram Logo"
+          />
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>

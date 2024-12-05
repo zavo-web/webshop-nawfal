@@ -1,178 +1,245 @@
-/* Algemene Stijlen voor de Pagina */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif; /* Lettertype*/
+  margin: 0; /* Geen ruimte aan buitenkant van body*/
+  padding: 0; /* Geen ruimte aan binnennkant van body*/
+  color: #333; /* Kleur*/
+  background-color: #f5f7fa; /* Kleur*/
 }
 
-/* Header Sectie */
 #header {
-    background-color: #1a41dd;
-    color: white;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex; /* Flexiebele lay-out om goed te positioneren.*/
+  justify-content: space-between; /* Zelfde ruimte tussen de item.*/
+  align-items: center; /* Alineren van de items verticaal. */
+  background-color: #002855; /* Kleur*/
+  color: white; /* Kleur*/
+  padding: 15px 30px; /* 15 pixels boven en onder, 30 pixel links en rechts.*/
 }
 
-#logo a {
-    color: white;
-    text-decoration: none;
-    font-size: 24px;
+#logo {
+  width: 150px; /* 15 pixels boven en onder.*/
 }
 
 #navigatie a {
-    color: rgb(66, 195, 242);
-    margin: 0 15px;
-    text-decoration: none;
+  color: #a9d6ff; /* Kleur*/
+  text-decoration: none;
+  margin: 0 15px; /* Voeg 15 pixel aan de beide kant*/
+  font-weight: bold; /* Maakt tekst vetgedrukt.*/
+}
+
+#navigatie a:hover {
+  color: #f5f7fa; /* Kleur*/
 }
 
 #zoekbalk input {
-    padding: 10px;
+  padding: 10px; /* Voeg 10 pixel binnen */
+  border: none; /*verwijder standaard rand.*/
+  border-radius: 5px; /* afgeronde hoeken in zoekbalk met straal van 5 pixel.*/
 }
 
-/* Banner Sectie */
-#banner-sectie {
-    text-align: center;
-    background-color: #f8f8f8;
-    padding: 12px;
+#winkelmand-profiel a {
+  margin: 0 10px; /* Voeg 10 pixels ruimte aan beide kanten. */
+  color: white; /* Kleur van de tekst is wit. */
+  font-size: 1.5rem; /* Lettergrootte instellen op 1,5 rem-eenheid. */
+  text-decoration: none; /* Verwijder standaard onderstreping van links. */
 }
 
-/* Categorieën Sectie */
+/* Banner */
+#banner {
+  text-align: center; /* Alineer de tekst horizontaal in het midden.*/
+  background: linear-gradient(to right, #003f7d, #0077cc); /* Kleur verandert van donkerblauw naar lichtblauw van links naar rechts.*/
+  color: white; /* Kleur*/
+  padding: 50px 20px; /* 50 pixel bonven en onder, 20 pixel links en rechts.*/
+}
+
+#banner h1 {
+  font-size: 2.5rem; /* Instellen van de lettergrootte op 2,5 rem-eenheid. */
+}
+
+#banner p {
+  font-size: 1.2rem; /* Instellen van de lettergrootte op 1,2 rem-eenheid. */
+}
+
+/* Categorieën */
 #categorieen {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
+  display: flex; /* Flexibele lay-out gebruiken om categorieën naast elkaar te plaatsen. */
+  justify-content: center; /* Plaatst de categorieën gecentreerd op de pagina. */
+  gap: 15px; /* Voeg 15 pixels ruimte toe tussen de categorieën. */
+  margin: 20px 0; /* Voeg 20 pixels ruimte toe boven en onder de categorieën. */
 }
 
-.categorie a {
-    margin: 0 15px;
-    padding: 10px;
-    background-color: #ddd;
-    color: rgb(66, 195, 242);
-    text-decoration: none;
-    border-radius: 5px;
+.categorie {
+  padding: 10px 20px; /* Voeg 10 pixels binnenruimte boven en onder, en 20 pixels links en rechts. */
+  background-color: #0066cc; /* Instellen van de achtergrondkleur naar blauw. */
+  color: white; /* Tekstkleur is wit. */
+  text-decoration: none; /* Verwijder standaard onderstreping van links. */
+  border-radius: 5px; /* Hoeken van de knop zijn afgerond met een straal van 5 pixels. */
+  font-weight: bold; /* Maakt de tekst vetgedrukt. */
 }
 
-/* Product Overzicht Sectie */
+.categorie:hover {
+  background-color: #004080; /* Verandert de achtergrondkleur naar een donkerder blauw bij hover. */
+}
+
+
+/* Product Overzicht */
 #product-overzicht {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
+  display: flex; /* Gebruik een flexibele lay-out voor het overzicht. */
+  flex-direction: column; /* Plaats de elementen verticaal onder elkaar. */
+  align-items: center; /* Centreer de elementen horizontaal. */
+  padding: 20px; /* Voeg 20 pixels binnenruimte rond het overzicht toe. */
 }
 
 #product-overzicht h2 {
-    width: 100%;
-    text-align: center;
+  width: 100%; /* Zorg ervoor dat de kop de volledige breedte inneemt. */
+  text-align: center; /* Centreer de tekst horizontaal. */
+  font-size: 28px; /* Stel de lettergrootte in op 28 pixels. */
+  color: #1a41dd; /* Kleur van de tekst is blauw. */
+  margin-bottom: 20px; /* Voeg 20 pixels ruimte toe onder de kop. */
 }
 
+
 .producten-rij {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px; /* Ruimte tussen de producten */
+  display: flex; /* Flex container zodat producten naast elkaar bevinden.*/
+  flex-wrap: wrap; /* Zorg ervoor dat produten in nieuwe regel gaan als er niet genoeg plaats is.*/
+  gap: 20px; /* Voeg 20 pixel tussen de producten.*/
+  justify-content: center; /* Centreert de producten horizontaal.*/
 }
 
 .product-kaart {
-    border: 1px solid #ddd;
-    padding: 15px;
-    width: 250px;
-    text-align: center;
-    border-radius: 5px;
-    background-color: #f9f9f9;
+  border: 1px solid #ddd; /* Geef de kaart een grijze rand.*/
+  padding: 15px; /* 15 pixels ruimte binnen in de kaart. */
+  width: 250px; /* Breedte van de kaart op 250pixels gezet.*/
+  text-align: center; /* Centreert de tekst in de kaart.*/
+  border-radius: 10px; /* Maakt de hoeken van de kaart afgerond met een straal van 10 pixels.*/
+  background-color: #ffffff; /* Achtergrond kleur van de kaart wit.*/
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Voegt een licht schaduw aan.*/
+  transition: transform 0.3s, box-shadow 0.3s; /* Zortgt voor een animatie van de grootte en de schaduw.*/
+}
+
+.product-kaart:hover {
+  transform: scale(1.05); /* Vergroot de kaart met 5% bij hover. */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Voeg een schaduw toe onder de kaart voor een zwevend effect. */
 }
 
 .product-kaart img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-/* Over Ons en Contact Sectie */
-#over-ons, #contact {
-    padding: 20px;
-    background-color: #f8f8f8;
-    margin: 20px;
-}
-
-/* Beleid Sectie */
-#beleid {
-    padding: 20px;
-    background-color: #f8f8f8; /* Zelfde als Over Ons en Contact */
-    margin: 20px;
-}
-
-#beleid h2 {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 20px;
-    color: #000000; /* Dezelfde kleur als de header */
-}
-
-#beleid h3 {
-    font-size: 22px;
-    margin-top: 20px;
-    color: #555;
-}
-
-#beleid p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    color: #666;
-}
-
-#beleid a {
-    color: #66c2ff; /* Hetzelfde lichtblauw als de winkelmand knop */
-    text-decoration: none;
-}
-
-#beleid a:hover {
-    color: #4fa3e1; /* Donkerder blauw bij hover */
-}
-
-/* Footer Sectie */
-#footer {
-    background-color: #1a41dd;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-#footer a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
+  width: 100%; /* Zorg ervoor dat de afbeelding de volledige breedte van de kaart inneemt. */
+  height: auto; /* Behoud de oorspronkelijke beeldverhouding van de afbeelding. */
+  border-radius: 5px; /* Rond de hoeken van de afbeelding af met een straal van 5 pixels. */
+  margin-bottom: 10px; /* Voeg 10 pixels ruimte toe onder de afbeelding. */
 }
 
 /* Winkelmand Knop */
 .winkelmand-knop {
-    padding: 15px 25px;
-    background-color: #66c2ff; /* Lichtblauw */
-    color: white;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  padding: 10px 20px; /* Voeg 10 pixels boven/onder en 20 pixels links/rechts binnenruimte toe. */
+  background: linear-gradient(90deg, #1a41dd, #66c2ff); /* Gebruik een lineaire kleurverloop als achtergrond. */
+  color: white; /* Kleur van de tekst is wit. */
+  font-size: 16px; /* Stel de lettergrootte in op 16 pixels. */
+  border: none; /* Verwijder de standaard rand. */
+  border-radius: 5px; /* Rond de hoeken van de knop af met een straal van 5 pixels. */
+  cursor: pointer; /* Toon een aanwijzer (hand) als de gebruiker eroverheen beweegt. */
+  transition: background 0.3s ease, transform 0.2s; /* Voeg een overgangseffect toe voor achtergrondkleur en beweging. */
 }
 
 .winkelmand-knop:hover {
-    background-color: #4fa3e1; /* Donkerder blauw bij hover */
+  background: linear-gradient(90deg, #1640b5, #4fa3e1); /* Verander het kleurverloop naar donkerder blauw bij hover. */
+  transform: translateY(-3px); /* Verplaats de knop 3 pixels omhoog bij hover. */
 }
 
-#sociale-media a {
-    margin: 0 10px;
-    display: inline-block;
+#over-ons,
+#contact,
+#beleid {
+  padding: 20px; /* Voeg 20 pixels binnenruimte rond de secties toe. */
+  background-color: #f0f0f0; /* Stel een lichtgrijze achtergrondkleur in. */
+  margin: 20px auto; /* Voeg 20 pixels ruimte boven en onder toe, en centreer de secties horizontaal. */
+  border-radius: 10px; /* Rond de hoeken van de secties af met een straal van 10 pixels. */
+  max-width: 800px; /* Beperk de breedte van de secties tot maximaal 800 pixels. */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Voeg een lichte schaduw toe onder de secties voor diepte. */
 }
 
-#sociale-media img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s ease;
+#over-ons h2,
+#contact h2,
+#beleid h2 {
+  text-align: center; /* Centreer de koptekst in de secties. */
+  color: #1a41dd; /* Stel de tekstkleur in op blauw. */
+  font-size: 28px; /* Stel de lettergrootte in op 28 pixels. */
+  margin-bottom: 10px; /* Voeg 10 pixels ruimte onder de koptekst toe. */
 }
 
-#sociale-media img:hover {
-    transform: scale(1.2); /* Vergroot het logo bij hover */
+#over-ons p,
+#contact p,
+#beleid p {
+  color: #555; /* Stel de tekstkleur in op donkergrijs. */
+  line-height: 1.6; /* Zorg voor 1,6x de standaard regelafstand om de tekst leesbaarder te maken. */
+  font-size: 16px; /* Stel de lettergrootte in op 16 pixels. */
+  text-align: justify; /* Maak de tekst uitgelijnd aan beide kanten voor een nette lay-out. */
+}
+
+/* Footer */
+#footer {
+  background-color: #002855; /* Stel de achtergrondkleur van de footer in op donkerblauw. */
+  color: white; /* Stel de tekstkleur in op wit. */
+  text-align: center; /* Centreer de tekst in de footer. */
+  padding: 10px; /* Voeg 10 pixels ruimte binnen de footer toe. */
+  font-size: 0.9rem; /* Stel de lettergrootte in op 0.9 rem (iets kleiner dan standaardgrootte). */
+}
+
+/* Responsive Stijlen */
+@media (max-width: 768px) {
+  /* Regels binnen deze media query zijn van toepassing op schermen met een breedte van 768 pixels of kleiner. */
+
+  #navigatie {
+    display: flex; /* Gebruik flexbox voor de lay-out van het navigatie-element. */
+    flex-wrap: wrap; /* Laat de navigatie-items zich op meerdere regels verdelen als dat nodig is. */
+    justify-content: center; /* Centreer de navigatie-items horizontaal. */
+  }
+
+  .producten-rij {
+    flex-direction: column; /* Laat de producten onder elkaar staan in plaats van naast elkaar. */
+    align-items: center; /* Centreer de producten horizontaal. */
+  }
+
+  .product-kaart {
+    width: 90%; /* Maak de productkaarten 90% van de breedte van het scherm. */
+  }
+
+  #over-ons,
+  #contact,
+  #beleid {
+    width: 95%; /* Beperk de breedte van de secties tot 95% van het scherm voor consistentie. */
+  }
+}
+
+
+/* Footer */
+#footer {
+  background-color: #002855; /* Stel een donkerblauwe achtergrondkleur in voor de footer. */
+  color: white; /* Maak de tekst in de footer wit. */
+  text-align: center; /* Centreer de inhoud horizontaal in de footer. */
+  padding: 20px 10px; /* Voeg 20 pixels ruimte toe aan de boven- en onderkant en 10 pixels aan de zijkanten. */
+  font-size: 0.9rem; /* Stel de lettergrootte in op 0.9 rem (iets kleiner dan de standaardgrootte). */
+}
+
+#social-media {
+  margin-top: 10px; /* Voeg 10 pixels ruimte boven de social media-sectie toe. */
+}
+
+.social-icon {
+  margin: 0 15px; /* Voeg 15 pixels horizontale ruimte toe tussen de sociale mediapictogrammen. */
+  display: inline-block; /* Zorg ervoor dat de pictogrammen naast elkaar worden weergegeven. */
+  width: 25px; /* Stel de breedte van elk pictogram in op 25 pixels. */
+  height: 25px; /* Stel de hoogte van elk pictogram in op 25 pixels. */
+}
+
+.social-icon img {
+  width: 100%; /* Laat het pictogram de volledige breedte van het container-element vullen. */
+  height: 100%; /* Laat het pictogram de volledige hoogte van het container-element vullen. */
+  transition: transform 0.3s ease; /* Maak een vloeiende overgang mogelijk bij transformaties van 0,3 seconden. */
+}
+
+.social-icon:hover img {
+  transform: scale(1.2); /* Vergroot het pictogram met 20% als de muis eroverheen beweegt. */
+}
+
+.checked {
+  color: orange; /* Stel de kleur van elementen met de klasse "checked" in op oranje. */
 }
